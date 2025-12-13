@@ -1,0 +1,65 @@
+/* ====== GLOBAL ====== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header, footer {
+    background: #00509E;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background: #021526;
+}
+
+nav a {
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav a:hover {
+    background: #013a63;
+}
+
+.container {
+    padding: 20px;
+}
+
+/* ====== BUTTON ====== */
+.btn {
+    display: inline-block;
+    background: #00509E;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #013a63;
+}
+
+/* ====== FOOTER ====== */
+footer p {
+    font-size: 14px;
+}
+
+/* ====== SPECIFIC CONTENT STYLES ====== */
+.event-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}

@@ -1,65 +1,137 @@
-/* ====== GLOBAL ====== */
-body {
-    font-family: Arial, sans-serif;
+/* Reset & Base Styling */
+* {
     margin: 0;
     padding: 0;
-    background: #f4f4f4;
-    color: #333;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header, footer {
-    background: #00509E;
+body {
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2f80ed;
     color: white;
     text-align: center;
-    padding: 15px 0;
+    padding: 20px 10px;
 }
 
+header p {
+    margin-top: 5px;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+/* Navigation */
 nav {
+    background-color: #1f5fbf;
     display: flex;
     justify-content: center;
-    background: #021526;
+    gap: 20px;
+    padding: 10px;
 }
 
 nav a {
     color: white;
-    padding: 12px 20px;
     text-decoration: none;
-    font-size: 16px;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 4px;
 }
 
-nav a:hover {
-    background: #013a63;
+nav a:hover,
+nav a.active {
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Main Container */
 .container {
+    max-width: 900px;
+    margin: 30px auto;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
 }
 
-/* ====== BUTTON ====== */
-.btn {
-    display: inline-block;
-    background: #00509E;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #013a63;
-}
-
-/* ====== FOOTER ====== */
-footer p {
-    font-size: 14px;
-}
-
-/* ====== SPECIFIC CONTENT STYLES ====== */
-.event-card {
-    background: white;
+/* Sections */
+section {
+    background-color: white;
+    padding: 20px;
     border-radius: 8px;
-    padding: 15px;
-    margin: 15px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+    margin-bottom: 15px;
+    color: #2f80ed;
+}
+
+/* Contact Info */
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 0.95rem;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #2f80ed;
+}
+
+/* Button */
+button {
+    background-color: #2f80ed;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f5fbf;
+}
+
+/* Footer */
+footer {
+    background-color: #2f80ed;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
 }

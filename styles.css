@@ -219,26 +219,3 @@ body {
     padding: 0 20px;
 }
 
-/* Gallery Grid */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.gallery {
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 16px;
-}
-
-.gallery img {
-    width: 100%;
-    height: 160px;      /* smaller height */
-    object-fit: cover;
-    border-radius: 12px;
-}
-
-    margin-top: 40px;
-}
-
-
